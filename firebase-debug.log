@@ -1,0 +1,82 @@
+[debug] [2021-07-25T09:36:19.659Z] ----------------------------------------------------------------------
+[debug] [2021-07-25T09:36:19.661Z] Command:       /Users/uchimurayu/.nodebrew/node/v16.1.0/bin/node /Users/uchimurayu/.nodebrew/current/bin/firebase init
+[debug] [2021-07-25T09:36:19.661Z] CLI Version:   9.16.0
+[debug] [2021-07-25T09:36:19.662Z] Platform:      darwin
+[debug] [2021-07-25T09:36:19.662Z] Node Version:  v16.1.0
+[debug] [2021-07-25T09:36:19.673Z] Time:          Sun Jul 25 2021 18:36:19 GMT+0900 (日本標準時)
+[debug] [2021-07-25T09:36:19.673Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-25T09:36:19.720Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-25T09:36:19.720Z] > authorizing via signed-in user (heiheiyuyu@icloud.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/uchimurayu/codevillage/Phase2/questionnaire
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using question-e60ed. 
+[debug] [2021-07-25T09:36:24.851Z] > refreshing access token with scopes: []
+[debug] [2021-07-25T09:36:24.852Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-25T09:36:25.187Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sun, 25 Jul 2021 09:36:25 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-25T09:36:25.235Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/question-e60ed [none]
+[debug] [2021-07-25T09:36:25.793Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/question-e60ed 200
+[debug] [2021-07-25T09:36:25.793Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/question-e60ed {"projectId":"question-e60ed","projectNumber":"194856475001","displayName":"Question","name":"projects/question-e60ed","resources":{"hostingSite":"question-e60ed","storageBucket":"question-e60ed.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+=== Firestore Setup
+[debug] [2021-07-25T09:36:25.794Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-07-25T09:36:25.794Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-25T09:36:26.146Z] <<< HTTP RESPONSE 200 {"date":"Sun, 25 Jul 2021 09:36:26 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-25T09:36:26.193Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/question-e60ed/services/firestore.googleapis.com  
+ 
+[debug] [2021-07-25T09:36:27.452Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 25 Jul 2021 09:36:27 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-25T09:36:27.452Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/question-e60ed  
+ 
+[debug] [2021-07-25T09:36:28.084Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 25 Jul 2021 09:36:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-25T09:36:28.084Z] database_type: CLOUD_FIRESTORE
+[debug] [2021-07-25T09:36:28.085Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-25T09:36:28.085Z] > authorizing via signed-in user (heiheiyuyu@icloud.com)
+[debug] [2021-07-25T09:36:28.085Z] [iam] checking project question-e60ed for permissions ["firebase.projects.get"]
+[debug] [2021-07-25T09:36:28.085Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/question-e60ed:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-07-25T09:36:29.027Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 25 Jul 2021 09:36:29 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=571","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-07-25T09:36:31.310Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/question-e60ed/releases?pageSize=10&pageToken=  
+ 
+[debug] [2021-07-25T09:36:32.700Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 25 Jul 2021 09:36:32 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-25T09:36:32.701Z] Found ruleset: projects/question-e60ed/rulesets/dbce811e-be2b-421f-90a9-97768924c30a
+[debug] [2021-07-25T09:36:32.702Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/question-e60ed/rulesets/dbce811e-be2b-421f-90a9-97768924c30a  
+ 
+[debug] [2021-07-25T09:36:33.947Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 25 Jul 2021 09:36:33 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-25T09:36:34.595Z] Error: EISDIR: illegal operation on a directory, open '/Users/uchimurayu/codevillage/Phase2/questionnaire'
+    at Object.openSync (node:fs:583:3)
+    at Object.writeFileSync (node:fs:2144:35)
+    at Object.createFileSync (/Users/uchimurayu/.nodebrew/node/v16.1.0/lib/node_modules/firebase-tools/node_modules/fs-extra/lib/ensure/file.js:43:6)
+    at Config.writeProjectFile (/Users/uchimurayu/.nodebrew/node/v16.1.0/lib/node_modules/firebase-tools/lib/config.js:144:12)
+    at /Users/uchimurayu/.nodebrew/node/v16.1.0/lib/node_modules/firebase-tools/lib/init/features/firestore/rules.js:50:27
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.doSetup [as firestore] (/Users/uchimurayu/.nodebrew/node/v16.1.0/lib/node_modules/firebase-tools/lib/init/features/firestore/index.js:35:5)
+    at async init (/Users/uchimurayu/.nodebrew/node/v16.1.0/lib/node_modules/firebase-tools/lib/init/index.js:19:9)
+[error] 
+[error] Error: An unexpected error has occurred.
