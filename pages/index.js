@@ -5,14 +5,6 @@ import firebase from "./firebase";
 import Container from "@material-ui/core/Container";
 import Input from "@material-ui/core/Input";
 
-let count = 0;
-
-{
-  if (count == 1) {
-    ("これまでに学習したことのあるプログラミング言語をすべて教えて下さい。");
-  }
-}
-
 export default function Home() {
   const [isLearning, setIsLearning] = useState(false);
   const [wasLearning, setWasLearning] = useState(false);
@@ -46,7 +38,6 @@ export default function Home() {
         birth: data.birth,
         question1: data.isLearning,
         question2: data.wasLearning,
-        // question: data.wasLearning2,
       })
       .catch((err) => {
         console.log(err);
